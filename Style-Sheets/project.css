@@ -77,22 +77,23 @@ a:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
-    width:100%;
-    height:150px;
-    background-color:rgb(225, 157, 49);
+    width: 100%;
+    height: 150px;
+    background-color: rgb(225, 157, 49);
 }
 
-.searchBar
-{
-    width:400px;
-    height:60px;
-    background-color:rgb(216, 123, 0);
-    align-items:center;
-    text-align:center;
+.searchBar {
+    width: 400px;
+    height: 60px;
+    background-color: rgb(216, 123, 0);
+    align-items: center;
+    text-align: center;
     justify-content: center;
-    border-radius:16px;
+    border-radius: 16px;
+    display:flex;
+    gap:10px;
 
 }
 
@@ -100,61 +101,57 @@ a:hover {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    font-size:16px;
-    text-align:center;
-    align-items:center;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
 }
 
 button {
     background-color: rgb(240, 197, 150);
     color: white;
-    padding:10px;
-    border-radius:8px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-button:hover
-{
-    background-color:rgb(128, 94, 0);
-    color:orange;
+button:hover {
+    background-color: rgb(128, 94, 0);
+    color: orange;
 }
 
-.projectsContainer1
-{
-    width:100%;
+.projectsContainer1 {
+    width: 100%;
     height: auto;
-    background-color:rgb(213, 115, 40);
-    align-items:center;
-    text-align:center;
-    justify-self:center;
-    justify-content:center;
-    display:grid;
+    background: linear-gradient(135deg, orange, red);
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    gap:100px;
+    gap: 100px;
 }
 
-.imageContainer img
-{
-    width:200px;
-    height:150px;
-    margin-top:50px;
-    border-radius:6px;
+.imageContainer img {
+    width: 200px;
+    height: 150px;
+    margin-top: 50px;
+    border-radius: 6px;
 }
 
-.imageContainer
-{
-    width:400px;
-    height:400px;
-    background-color:white;
-    color:orange;
-    border-radius:16px;
-    align-items:center;
-    text-align:center;
-    margin-top:75px;
+.imageContainer {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    color: orange;
+    border-radius: 16px;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
 }
 
-.imageContainer:hover
-{
+.imageContainer:hover {
     transform: translateY(-4px);
-    box-shadow: 0px 0px 5px 5px orange;
+    box-shadow: 0px 0px 8px 0px rgb(238, 238, 255);
+    border: 2px solid red;
 }

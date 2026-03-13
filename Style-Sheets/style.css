@@ -13,9 +13,9 @@ header {
 
 .site {
     background-color: grey;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #logo {
@@ -43,18 +43,17 @@ header {
     font-weight: 500;
 }
 
-ul li a
-{
-    text-decoration:none;
+ul li a {
+    text-decoration: none;
 }
 
-.footerLinks
-{
-    display:flex;
-    list-style-type:none;
-    gap:20px;
+.footerLinks {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
     justify-content: space-between;
 }
+
 a:link {
     color: white;
 }
@@ -73,52 +72,70 @@ a:hover {
 }
 
 footer {
-    display: block;
+    display: flex;
     height: 100px;
-    text-align:center;
+    text-align: center;
     background-color: #333;
     color: white;
-    align-items:center;
-    justify-content:center;
-    position:fixed;
-    bottom:0;
-    width:100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-direction:column;
 }
 
-.footer-container
-{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:25px;
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+    align-self: center;
 }
 
-.box
-{
+.box {
     background-color: white;
-    width:100%;
-    padding:10px;
-    height:350px;
+    width: 100%;
+    padding: 10px;
+    height: 350px;
+   display:grid;
+   grid-template-columns: auto auto auto;
+    align-items:center;
 }
 
-.firstBox
+.box div img
 {
     width:350px;
-    border-right:5px solid orange;
-    height:100%;
-    font-size:20px;
-    font-weight:500;
-    background-color:antiquewhite;
-    border-radius:10px;
-    padding:15px;
-    color:rgb(94, 85, 85);
+    height:250px;
+    border-radius:16px;
+    border: 2px solid orange;
 }
 
-.boxHR
+.certificationBox
 {
-    border: 2px solid burlywood;
-    border-radius:6px;
+    border: 2px solid orange;
+    width:200px;
+    height:250px;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    display:flex;
+    border-radius: 8px;
+    background: linear-gradient(135deg, orange,red );
 }
+.firstBox {
+    width: 500px;
+    border-right: 5px solid orange;
+    height: 90%;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 15px;
+    color: rgb(94, 85, 85);
+}
+
 #logo {
     position: relative;
     left: 0px;
@@ -137,7 +154,6 @@ footer {
     color: white
 }
 
-hr
-{
+hr {
     border: 2px solid rgb(245, 181, 61);
 }
