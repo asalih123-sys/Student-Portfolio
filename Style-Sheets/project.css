@@ -75,22 +75,25 @@ a:hover {
 .searchContainer {
     align-items: center;
     text-align: center;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap:10px;
     justify-content: center;
+    width:100%;
+    height:150px;
+    background-color:rgb(225, 157, 49);
 }
 
 .searchBar
 {
     width:400px;
     height:60px;
-    background-color:antiquewhite;
+    background-color:rgb(216, 123, 0);
     align-items:center;
     text-align:center;
     justify-content: center;
     border-radius:16px;
+
 }
 
 .filterButtons {
@@ -117,8 +120,8 @@ button:hover
 
 .projectsContainer1
 {
-    width:1500px;
-    height:800px;
+    width:100%;
+    height: auto;
     background-color:rgb(213, 115, 40);
     align-items:center;
     text-align:center;
@@ -126,9 +129,8 @@ button:hover
     justify-content:center;
     display:grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     gap:100px;
-    border-radius:16px;
-    margin-top:50px
 }
 
 .imageContainer img
