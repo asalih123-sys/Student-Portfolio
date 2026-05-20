@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="Style-Sheets/style.css">
     <link rel="stylesheet" href="Style-Sheets/project.css">
 </head>
 
-<body>
+<body class="site">
     <header>
         <nav class="navbar">
             <div id="logo">
@@ -23,104 +24,115 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li> <a href="contact.html">Contacts</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
-    <section class="projectsContainer">
-        <!-- Going to Include a Search Bar where you can look up the project and a button to filter through html css javascript or include either html css, html javascript, and etc etc -->
-        <div class="searchContainer">
-            <div class="searchBar">
-                <label for="searchBar">Search for a Project</label>
-                <input type="text" placeholder="Search" name="searchBar" id="searchBar">
-            </div>
-            <div class="filterButtons">
-                <p>Filter the Progamming Language!</p>
-                <button>JavaScript</button>
-                <button>HTML</button>
-                <button>CSS</button>
-            </div>
-        </div>
-        <hr>
-        <div class="projectsContainer1">
-            <div>
-               
-                <div class="imageContainer">
-                     <h3>Calculator Project</h3>
-                    <a href="https://asalih123-sys.github.io/Calculator-Projects/" target="_blank"><img
-                            src="Images/calc.png" alt="Calculator Project"></a>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
+    <main>
+        <section class="projectsIntro">
+            <h1 class="sectionTitle">Projects</h1>
+            <p>These are the projects I’ve been using to practice layout, interaction, and simple front-end structure. I’m keeping the list small on purpose so the work stays clear and honest.</p>
+        </section>
+
+        <section class="projectsContainer">
+            <div class="searchContainer">
+                <div class="searchBar">
+                    <label for="searchBar">Search for a Project</label>
+                    <input type="text" placeholder="Search" name="searchBar" id="searchBar">
+                </div>
+                <div class="filterButtons">
+                    <p>Filter by language</p>
+                    <button>JavaScript</button>
+                    <button>HTML</button>
+                    <button>CSS</button>
                 </div>
             </div>
+            <hr>
+            <div class="projectsContainer1">
+                <article class="imageContainer projectCard">
+                    <h3>Calculator Project</h3>
+                    <p class="projectMeta">A small utility build focused on clean input handling and quick interactions.</p>
+                    <a href="https://asalih123-sys.github.io/Calculator-Projects/" target="_blank"><img
+                            src="Images/calc.png" alt="Calculator Project"></a>
+                    <ul class="projectList">
+                        <li>HTML structure</li>
+                        <li>CSS layout and spacing</li>
+                        <li>JavaScript logic</li>
+                    </ul>
+                    <span class="projectTag">HTML / CSS / JavaScript</span>
+                </article>
 
-            <div class="imageContainer">
-                <h3>Number Guess Project</h3>
-                <a href="https://asalih123-sys.github.io/Guessing-a-Number/" target="_blank"><img
-                        src="Images/numberguess.png" alt="Number Guessing Project"></a>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
+                <article class="imageContainer projectCard">
+                    <h3>Number Guess Project</h3>
+                    <p class="projectMeta">A simple game build that helps practice logic, feedback, and state changes.</p>
+                    <a href="https://asalih123-sys.github.io/Guessing-a-Number/" target="_blank"><img
+                            src="Images/numberguess.png" alt="Number Guessing Project"></a>
+                    <ul class="projectList">
+                        <li>Responsive controls</li>
+                        <li>Basic game flow</li>
+                        <li>Reusable button styles</li>
+                    </ul>
+                    <span class="projectTag">HTML / CSS / JavaScript</span>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <h3>Portfolio Website</h3>
+                    <p class="projectMeta">The site you are looking at, built to practice structure, page flow, and presentation.</p>
+                    <ul class="projectList">
+                        <li>Shared navigation and footer</li>
+                        <li>Responsive sections</li>
+                        <li>Simple color system</li>
+                    </ul>
+                    <span class="projectTag">HTML / CSS</span>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <h3>Contact Page Layout</h3>
+                    <p class="projectMeta">A clean contact page with form fields and contact details laid out clearly.</p>
+                    <ul class="projectList">
+                        <li>Form field styling</li>
+                        <li>Card-based layout</li>
+                        <li>Works on smaller screens</li>
+                    </ul>
+                    <span class="projectTag">HTML / CSS</span>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <h3>Study Notes Page</h3>
+                    <p class="projectMeta">A future project idea for keeping short notes, links, and practice prompts in one place.</p>
+                    <ul class="projectList">
+                        <li>Planning stage</li>
+                        <li>Will focus on clarity</li>
+                        <li>Good candidate for JavaScript later</li>
+                    </ul>
+                    <span class="projectTag">Planned</span>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <h3>Weather Dashboard Idea</h3>
+                    <p class="projectMeta">A second planned build to practice APIs, conditional states, and simple data display.</p>
+                    <ul class="projectList">
+                        <li>API practice</li>
+                        <li>Reusable cards</li>
+                        <li>Data formatting</li>
+                    </ul>
+                    <span class="projectTag">Planned</span>
+                </article>
             </div>
+        </section>
+    </main>
 
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-            </div>
-
-
-
-            <div class="imageContainer">
-                <a href=""><img src="" alt=""></a>
-
-            </div>
+    <footer>
+        <div class="footer-container">
+            <ul class="footerLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </section>
+        <p>&copy; 2025 Amer Salih. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>

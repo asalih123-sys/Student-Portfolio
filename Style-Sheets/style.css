@@ -4,23 +4,38 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #2b2f33;
+    background: #f4efe8;
+}
+
 header {
     width: 100%;
     height: 80px;
-    background: #494747;
+    background: #243447;
     color: white;
 }
 
 .site {
-    background-color: grey;
+    background-color: #f4efe8;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
+
 #logo {
     font-size: 20px;
-    font-weight: none;
+    font-weight: 600;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -32,7 +47,7 @@ header {
     justify-content: space-between;
     padding: 8px 20px;
     align-items: center;
-    color: rgb(251, 251, 251);
+    color: #f8f5f0;
 }
 
 .headerLinks {
@@ -55,34 +70,42 @@ ul li a {
 }
 
 a:link {
-    color: white;
+    color: #2b2f33;
 }
 
 a:visited {
-    color: white;
+    color: #2b2f33;
 }
 
 a:active {
-    color: ghostwhite;
-    text-shadow: 0px 0px 4px white;
+    color: #b56b4c;
 }
 
 a:hover {
-    color: rgb(222, 98, 36);
+    color: #b56b4c;
+}
+
+.navbar a,
+footer a {
+    color: #f8f5f0;
+}
+
+.navbar a:hover,
+footer a:hover {
+    color: #d9b08c;
 }
 
 footer {
     display: flex;
     height: 100px;
     text-align: center;
-    background-color: #333;
+    background-color: #fdfdfd;
     color: white;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    flex-direction:column;
+    flex-direction: column;
+    margin-top: auto;
 }
 
 .footer-container {
@@ -95,45 +118,45 @@ footer {
 }
 
 .box {
-    background-color: white;
+    background-color: #fffdf8;
     width: 100%;
-    padding: 10px;
-    height: 350px;
-   display:grid;
-   grid-template-columns: auto auto auto;
-    align-items:center;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: center;
 }
 
-.box div img
-{
-    width:350px;
-    height:250px;
-    border-radius:16px;
-    border: 2px solid orange;
+.box div img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid #d8cab8;
 }
 
-.certificationBox
-{
-    border: 2px solid orange;
-    width:200px;
-    height:250px;
-    align-items:center;
-    text-align:center;
-    justify-content:center;
-    display:flex;
+.certificationBox {
+    border: 2px solid #d8cab8;
+    width: 100%;
+    max-width: 220px;
+    min-height: 250px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
     border-radius: 8px;
-    background: linear-gradient(135deg, orange,red );
+    background: linear-gradient(135deg, #d9b08c, #efe7db);
 }
 .firstBox {
-    width: 500px;
-    border-right: 5px solid orange;
-    height: 90%;
+    width: 100%;
+    border-right: 5px solid #b56b4c;
+    min-height: 100%;
     font-size: 20px;
     font-weight: 500;
-    background-color: antiquewhite;
+    background-color: #ece4d9;
     border-radius: 10px;
     padding: 15px;
-    color: rgb(94, 85, 85);
+    color: #5f675f;
 }
 
 #logo {
@@ -143,9 +166,9 @@ footer {
 }
 
 
-.boxes#aboutme {
+#aboutme {
     padding: 20px;
-    background: linear-gradient(45deg, rgb(42, 42, 146), rgb(44, 105, 93));
+    background: linear-gradient(135deg, #dfe8e2, #efe6da);
 
 }
 
@@ -155,5 +178,278 @@ footer {
 }
 
 hr {
-    border: 2px solid rgb(245, 181, 61);
+    border: 1px solid #d8cab8;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 24px;
+    padding: 28px 20px;
+    background: linear-gradient(135deg, #f7f2eb, #e6ddd1);
+    border-bottom: 1px solid #d8cab8;
+}
+
+.hero-copy,
+.hero-panel,
+.infoCard,
+.resumeCard,
+.contactCard,
+.formCard {
+    background: #fffdf8;
+    border: 1px solid #d8cab8;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(36, 52, 71, 0.06);
+}
+
+.hero-copy {
+    padding: 28px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    color: #60756a;
+    margin-bottom: 12px;
+}
+
+.hero h1,
+.sectionTitle {
+    margin-bottom: 12px;
+    color: #243447;
+}
+
+.hero p,
+.sectionLead,
+.resumeCard p,
+.contactCard p,
+.infoCard p {
+    color: #5f675f;
+}
+
+.heroActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.buttonLink {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: #243447;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.buttonLink.secondary {
+    background: transparent;
+    color: #243447 !important;
+    border: 1px solid #d8cab8;
+}
+
+.hero-panel {
+    padding: 24px;
+}
+
+.statList,
+.detailList,
+.resumeList,
+.contactList {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.statList li,
+.detailList li,
+.resumeList li,
+.contactList li {
+    padding: 10px 12px;
+    background: #ece4d9;
+    border-radius: 10px;
+}
+
+.sectionBlock {
+    padding: 28px 20px;
+}
+
+.infoGrid,
+.resumeGrid,
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.infoCard,
+.resumeCard,
+.contactCard,
+.formCard {
+    padding: 20px;
+}
+
+.cardTag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eef1ed;
+    color: #60756a;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.contactForm {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    border: 1px solid #d8cab8;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font: inherit;
+    background: #fff;
+    color: #2b2f33;
+}
+
+.contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contactForm button {
+    width: fit-content;
+    background: #243447;
+    color: #fff;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+    }
+
+    header {
+        height: auto;
+        padding: 12px 0;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+    }
+
+    .firstBox {
+        border-right: 0;
+        border-bottom: 5px solid orange;
+    }
+
+    .certificationBox {
+        max-width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        padding: 10px 14px;
+    }
+
+    #logo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #logo img {
+        width: 44px;
+        height: 44px;
+    }
+
+    #head h1 {
+        font-size: 1.35rem;
+        line-height: 1.2;
+    }
+
+    .headerLinks,
+    .footerLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero,
+    .sectionBlock,
+    #aboutme,
+    .box,
+    .projectsIntro,
+    .searchContainer,
+    .projectsContainer1 {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .hero-copy,
+    .hero-panel,
+    .infoCard,
+    .resumeCard,
+    .contactCard,
+    .formCard,
+    .firstBox,
+    .certificationBox {
+        padding: 16px;
+    }
+
+    .heroActions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buttonLink {
+        text-align: center;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .firstBox {
+        border-right: 0;
+        border-bottom: 4px solid #b56b4c;
+        font-size: 1rem;
+    }
+
+    .box div img {
+        max-width: 100%;
+    }
+
+    .certificationBox {
+        max-width: 100%;
+        min-height: 210px;
+    }
+
+    .contactForm button {
+        width: 100%;
+    }
 }
