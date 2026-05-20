@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -38,8 +40,26 @@ main {
     font-weight: 600;
     display: flex;
     flex-direction: row;
+    align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 0;
+}
+
+.brandLink {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #f8f5f0 !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.brandLink:hover {
+    color: #d9b08c !important;
 }
 
 .navbar {
@@ -100,12 +120,22 @@ footer {
     height: 100px;
     text-align: center;
     background-color: #fdfdfd;
-    color: white;
+    color: #243447;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-direction: column;
     margin-top: auto;
+}
+
+footer p,
+footer li,
+footer a {
+    color: #243447;
+}
+
+footer a:hover {
+    color: #b56b4c;
 }
 
 .footer-container {
@@ -122,33 +152,23 @@ footer {
     width: 100%;
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
     align-items: center;
 }
 
-.box div img {
+.aboutImage img {
     width: 100%;
-    max-width: 350px;
+    max-width: 100%;
     height: auto;
     border-radius: 16px;
     border: 2px solid #d8cab8;
+    display: block;
 }
 
-.certificationBox {
-    border: 2px solid #d8cab8;
-    width: 100%;
-    max-width: 220px;
-    min-height: 250px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #d9b08c, #efe7db);
-}
 .firstBox {
     width: 100%;
+    min-height: 100%;
     border-right: 5px solid #b56b4c;
     min-height: 100%;
     font-size: 20px;
@@ -235,6 +255,12 @@ hr {
     margin-top: 20px;
 }
 
+.resumeContactLine {
+    font-weight: 700;
+    color: #243447;
+    margin-top: 8px;
+}
+
 .buttonLink {
     display: inline-block;
     padding: 10px 16px;
@@ -249,6 +275,10 @@ hr {
     background: transparent;
     color: #243447 !important;
     border: 1px solid #d8cab8;
+}
+
+.buttonLink.secondary:hover {
+    background: #f4efe8;
 }
 
 .hero-panel {
@@ -278,6 +308,41 @@ hr {
     padding: 28px 20px;
 }
 
+@media print {
+    header,
+    footer,
+    .heroActions {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .hero,
+    .hero-copy,
+    .hero-panel,
+    .infoCard,
+    .resumeCard,
+    .contactCard,
+    .formCard,
+    .box,
+    .firstBox,
+    .aboutImage img {
+        box-shadow: none !important;
+        background: #fff !important;
+    }
+
+    .hero,
+    .sectionBlock,
+    #aboutme,
+    .box {
+        padding: 0 !important;
+        border: 0 !important;
+    }
+}
+
 .infoGrid,
 .resumeGrid,
 .contactGrid {
@@ -305,14 +370,17 @@ hr {
     font-weight: 700;
 }
 
-.contactForm {
+.contactForm,
+.form {
     display: grid;
     gap: 12px;
     margin-top: 12px;
 }
 
 .contactForm input,
-.contactForm textarea {
+.contactForm textarea,
+.form input,
+.form textarea {
     width: 100%;
     border: 1px solid #d8cab8;
     border-radius: 12px;
@@ -322,12 +390,14 @@ hr {
     color: #2b2f33;
 }
 
-.contactForm textarea {
+.contactForm textarea,
+.form textarea {
     min-height: 150px;
     resize: vertical;
 }
 
-.contactForm button {
+.contactForm button,
+.form button {
     width: fit-content;
     background: #243447;
     color: #fff;
@@ -358,8 +428,8 @@ hr {
         border-bottom: 5px solid orange;
     }
 
-    .certificationBox {
-        max-width: 100%;
+    .aboutImage {
+        width: 100%;
     }
 
     .hero {
@@ -440,13 +510,8 @@ hr {
         font-size: 1rem;
     }
 
-    .box div img {
+    .aboutImage img {
         max-width: 100%;
-    }
-
-    .certificationBox {
-        max-width: 100%;
-        min-height: 210px;
     }
 
     .contactForm button {

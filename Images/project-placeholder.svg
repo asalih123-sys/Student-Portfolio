@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Project preview placeholder</title>
+  <desc id="desc">A neutral placeholder illustration for portfolio project cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4efe8"/>
+      <stop offset="100%" stop-color="#d8cab8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf8"/>
+      <stop offset="100%" stop-color="#f8f4ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="36" fill="url(#bg)"/>
+  <circle cx="126" cy="116" r="44" fill="#b56b4c" opacity="0.2"/>
+  <circle cx="674" cy="320" r="62" fill="#243447" opacity="0.12"/>
+  <rect x="80" y="72" width="640" height="306" rx="28" fill="url(#panel)" stroke="#b56b4c" stroke-opacity="0.25" stroke-width="4"/>
+  <rect x="118" y="112" width="184" height="18" rx="9" fill="#d8cab8"/>
+  <rect x="118" y="150" width="312" height="20" rx="10" fill="#243447" opacity="0.75"/>
+  <rect x="118" y="184" width="240" height="16" rx="8" fill="#5f675f" opacity="0.45"/>
+  <rect x="118" y="228" width="212" height="118" rx="22" fill="#d9b08c" opacity="0.45"/>
+  <rect x="350" y="228" width="322" height="26" rx="13" fill="#243447" opacity="0.12"/>
+  <rect x="350" y="268" width="278" height="26" rx="13" fill="#243447" opacity="0.12"/>
+  <rect x="350" y="308" width="240" height="26" rx="13" fill="#243447" opacity="0.12"/>
+  <text x="400" y="402" fill="#243447" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Project Preview</text>
+</svg>

@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Amer Salih | Resume</title>
     <link rel="stylesheet" href="Style-Sheets/style.css">
 </head>
 <body class="site">
     <header>
         <nav class="navbar">
             <div id="logo">
-                <img src="Images/download.jfif" alt="Profile Picture" width="50px">
-                <h2 style="margin-top:10px;">Amer Salih</h2>
+                <a class="brandLink" href="index.html" aria-label="Go to homepage">Amer Salih</a>
             </div>
 
             <section id="head">
@@ -29,75 +29,166 @@
     <main>
         <section class="hero">
             <div class="hero-copy">
-                <p class="eyebrow">Education and project summary</p>
-                <h1>Student developer with backend experience, coding competition success, and a strong technical foundation.</h1>
-                <p>This page highlights my background in software development, competitive coding, and practical project work.</p>
+                <p class="eyebrow">Resume</p>
+                <h1>Amer Salih</h1>
+                <p>Full Stack Developer | Aspiring Community Activist | Honors Student</p>
+                <p class="resumeContactLine">Goodyear, AZ 85338 • asalih2325@gmail.com • 480-819-8027</p>
+                <div class="heroActions">
+                    <a class="buttonLink" href="#resume-sections">View resume details</a>
+                    <a class="buttonLink secondary" href="#" onclick="window.print(); return false;">Download / Print PDF</a>
+                </div>
             </div>
             <div class="hero-panel">
-                <h2 class="sectionTitle">Quick summary</h2>
+                <h2 class="sectionTitle">Profile Snapshot</h2>
+                <p class="sectionLead">Student developer seeking opportunities in web development, backend development, and community-focused technology projects.</p>
                 <ul class="detailList">
-                    <li>Based in Arizona</li>
-                    <li>3 years of high school coding education</li>
-                    <li>First place in coding at FBLA Arizona State</li>
+                    <li>West-MEC Central Campus coding student</li>
+                    <li>Honors student with a 3.85 UW / 4.63 W GPA</li>
+                    <li>1st place FBLA Arizona State website coding and development</li>
                 </ul>
             </div>
         </section>
 
-        <section class="sectionBlock">
-            <h2 class="sectionTitle">Experience</h2>
+        <section class="sectionBlock" id="resume-sections">
+            <h2 class="sectionTitle">Technical Skills</h2>
             <div class="resumeGrid">
                 <article class="resumeCard">
-                    <span class="cardTag">Backend</span>
-                    <h3>Backend Systems Development</h3>
-                    <p>Experienced in developing backend systems with a focus on reliability, clean logic flow, and practical implementation.</p>
-                </article>
-                <article class="resumeCard">
-                    <span class="cardTag">Competition</span>
-                    <h3>FBLA Arizona State Coding</h3>
-                    <p>Competed at the Arizona State level in FBLA coding events and earned first place.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="sectionBlock">
-            <h2 class="sectionTitle">Education and skills</h2>
-            <div class="resumeGrid">
-                <article class="resumeCard">
-                    <span class="cardTag">Education</span>
-                    <h3>Three-Year High School Coding Track</h3>
-                    <p>Completed three years of formal coding education in high school, building strong fundamentals in software logic and development practices.</p>
-                </article>
-                <article class="resumeCard">
-                    <span class="cardTag">Skills</span>
-                    <h3>Core tools</h3>
+                    <span class="cardTag">Languages</span>
+                    <h3>Programming Languages</h3>
                     <ul class="resumeList">
-                        <li>Backend system design and implementation</li>
-                        <li>HTML and semantic structure</li>
-                        <li>CSS layout and responsive design</li>
-                        <li>JavaScript basics</li>
-                        <li>Problem-solving and debugging</li>
+                        <li>HTML</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
                     </ul>
                 </article>
                 <article class="resumeCard">
-                    <span class="cardTag">Goals</span>
-                    <h3>Next step</h3>
-                    <p>Continue building full-stack projects that combine strong backend architecture with clean, user-friendly interfaces.</p>
+                    <span class="cardTag">Database</span>
+                    <h3>Data and Storage</h3>
+                    <ul class="resumeList">
+                        <li>MongoDB</li>
+                        <li>NoSQL</li>
+                    </ul>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">Web</span>
+                    <h3>Web Development</h3>
+                    <ul class="resumeList">
+                        <li>Backend development</li>
+                        <li>REST API integration</li>
+                        <li>Responsive web design</li>
+                    </ul>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">Tools</span>
+                    <h3>Tools and Concepts</h3>
+                    <ul class="resumeList">
+                        <li>Windows OS</li>
+                        <li>Microsoft Office</li>
+                        <li>Google Workspace</li>
+                        <li>Data structures and algorithms</li>
+                        <li>Object-oriented programming</li>
+                    </ul>
                 </article>
             </div>
         </section>
 
         <section class="sectionBlock">
-            <h2 class="sectionTitle">Certifications and interests</h2>
+            <h2 class="sectionTitle">Education</h2>
+            <div class="resumeGrid">
+                <article class="resumeCard">
+                    <span class="cardTag">Education</span>
+                    <h3>West-MEC Central Campus</h3>
+                    <p>Glendale, AZ | 2025-2027</p>
+                    <p>Currently pursuing Year 1 Coding, a 450-hour program focused on front-end web development, web apps, responsive design, and JavaScript projects.</p>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">High School</span>
+                    <h3>Verrado High School</h3>
+                    <p>Buckeye, AZ | High School Diploma, in Progress | 2023–2027</p>
+                    <p>Honors student with a 3.85 UW / 4.63 W GPA.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Work Based Learning and Work Experience</h2>
+            <div class="resumeGrid">
+                <article class="resumeCard">
+                    <span class="cardTag">West-MEC</span>
+                    <h3>CODING YEAR 1</h3>
+                    <p>Completed web app projects and a capstone gaming project using HTML, CSS, and JavaScript. Applied problem solving, teamwork, user interaction, and presentation skills.</p>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">Experience</span>
+                    <h3>Hobby Lobby | Retail Associate</h3>
+                    <p>Goodyear, AZ | July 2025–Present</p>
+                    <p>Support store operations, maintain an organized sales floor, assist during busy shifts, and work with team members to create a positive customer experience.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Projects and Community Involvement</h2>
+            <div class="resumeGrid">
+                <article class="resumeCard">
+                    <span class="cardTag">Leadership</span>
+                    <h3>Impact Club at Verrado</h3>
+                    <p>President and Founder of a student-led club focused on civic engagement, Teen Court, Project Citizen, and student involvement.</p>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">Project</span>
+                    <h3>Capstone Gaming Project</h3>
+                    <p>Built with HTML, CSS, and JavaScript as part of West-MEC Year 1 Coding. Focused on user interaction, problem solving, and presentation.</p>
+                    <div style="margin-top:12px;">
+                        <a class="buttonLink secondary" href="https://github.com/asalih123-sys/Game-Project" target="_blank" rel="noreferrer">GitHub Repo</a>
+                    </div>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">Community</span>
+                    <h3>Community Filmmaking and Service</h3>
+                    <p>Documents community events and student voices. National Honor Society member since 2024 with 100+ service hours through school events, Verrado Heritage, Homecoming, Prom support, a 2025 homeless food drive, and community initiatives.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Certifications and Awards</h2>
             <div class="resumeGrid">
                 <article class="resumeCard">
                     <span class="cardTag">Certification</span>
-                    <h3>Credly badge</h3>
-                    <p>One certification badge is embedded on the home page, and more credentials can be added as I earn them.</p>
+                    <h3>Information Technology Specialist</h3>
+                    <ul class="resumeList">
+                        <li>HTML and CSS</li>
+                        <li>Software and App Design Specialist</li>
+                    </ul>
                 </article>
                 <article class="resumeCard">
-                    <span class="cardTag">Interest</span>
-                    <h3>What I enjoy building</h3>
-                    <p>Simple interfaces, small tools, and pages that are easy to use without extra noise.</p>
+                    <span class="cardTag">Recognition</span>
+                    <h3>FBLA Arizona State</h3>
+                    <p>Earned 1st place at the FBLA Arizona State level for the 2025–2026 school year in Website Coding & Development.</p>
+                    <p>Earned Recognition of Honors Student for freshmen, sophomore, and junior year.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Reference</h2>
+            <div class="resumeGrid">
+                <article class="resumeCard">
+                    <span class="cardTag">Instructor</span>
+                    <h3>Mrs. S. Kaur</h3>
+                    <p>Coding Instructor, West-MEC</p>
+                    <p>Sukhdeep.kaur@west-mec.org</p>
+                </article>
+                <article class="resumeCard">
+                    <span class="cardTag">Summary</span>
+                    <h3>What I bring</h3>
+                    <ul class="resumeList">
+                        <li>Frontend and backend development foundations</li>
+                        <li>Community-oriented project experience</li>
+                        <li>Strong academics and reliable work habits</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -112,7 +203,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <p>&copy; 2025 Amer Salih. All Rights Reserved.</p>
+        <p>&copy; 2025 Amer Salih, Phoenix, AZ.</p>
     </footer>
 </body>
 </html>

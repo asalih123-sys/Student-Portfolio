@@ -10,8 +10,7 @@
     <header>
         <nav class="navbar">
             <div id="logo">
-                <img src="Images/download.jfif" alt="Profile Picture" width="50px">
-                <h2 style="margin-top:10px;">Amer Salih</h2>
+                <a class="brandLink" href="index.html" aria-label="Go to homepage">Amer Salih</a>
             </div>
 
             <section id="head">
@@ -47,23 +46,36 @@
             <div class="contactGrid">
                 <article class="contactCard">
                     <span class="cardTag">Availability</span>
-                    <h3>Open to student-level opportunities</h3>
-                    <p>I am available for project conversations, portfolio feedback, and small web builds.</p>
+                    <h3>Open to larger projects and paid work</h3>
+                    <p>I am available for project conversations, portfolio feedback, small web builds, and paid work opportunities.</p>
                     <ul class="contactList">
                         <li>Response time: usually within 1-2 days</li>
-                        <li>Preferred topics: web, layout, and beginner-friendly projects</li>
+                        <li>Preferred topics: web, layout, and practical work I can help move forward</li>
+                    </ul>
+                    <span class="cardTag">What I can help with</span>
+                    <ul class="contactList">
+                        <li>Portfolio updates and page cleanup</li>
+                        <li>Landing pages and section-based layouts</li>
+                        <li>Small frontend improvements for existing sites</li>
                     </ul>
                 </article>
 
                 <article class="formCard">
                     <span class="cardTag">Message</span>
                     <h3>Send a note</h3>
-                    <form class="contactForm">
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="3ec01063-88a9-4401-b117-2b6676b555eb">
                         <input type="text" name="name" placeholder="Your name">
                         <input type="email" name="email" placeholder="Your email">
                         <textarea name="message" placeholder="Tell me what you want to talk about"></textarea>
                         <button type="submit">Send message</button>
                     </form>
+                    <span class="cardTag" style="margin-top:16px;">Good messages include</span>
+                    <ul class="contactList">
+                        <li>Project scope and timeline</li>
+                        <li>Budget range or paid opportunity details</li>
+                        <li>Any links, references, or examples that help explain the work</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -78,7 +90,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <p>&copy; 2025 Amer Salih. All Rights Reserved.</p>
+        <p>&copy; 2025 Amer Salih, Phoenix, AZ.</p>
     </footer>
 </body>
 </html>

@@ -13,8 +13,7 @@
     <header>
         <nav class="navbar">
             <div id="logo">
-                <img src="Images/download.jfif" alt="Profile Picture" width="50px">
-                <h2 style="margin-top:10px;">Amer Salih</h2>
+                <a class="brandLink" href="index.html" aria-label="Go to homepage">Amer Salih</a>
             </div>
 
             <section id="head">
@@ -29,97 +28,375 @@
         </nav>
     </header>
     <main>
-        <section class="projectsIntro">
-            <h1 class="sectionTitle">Projects</h1>
-            <p>These are the projects I’ve been using to practice layout, interaction, and simple front-end structure. I’m keeping the list small on purpose so the work stays clear and honest.</p>
-        </section>
-
         <section class="projectsContainer">
             <div class="searchContainer">
-                <div class="searchBar">
-                    <label for="searchBar">Search for a Project</label>
-                    <input type="text" placeholder="Search" name="searchBar" id="searchBar">
-                </div>
-                <div class="filterButtons">
-                    <p>Filter by language</p>
-                    <button>JavaScript</button>
-                    <button>HTML</button>
-                    <button>CSS</button>
+                <div class="projectsHeaderRow">
+                    <div class="projectsHeaderCopy">
+                        <h1 class="sectionTitle">Projects</h1>
+                        <p>These are the projects I’ve been using to practice layout, interaction, and simple front-end structure. I’m keeping the list small on purpose so the work stays clear and honest.</p>
+                    </div>
+                    <div class="projectsControls">
+                        <div class="searchBar">
+                            <label for="searchBar">Search for a Project</label>
+                            <input type="text" placeholder="Search" name="searchBar" id="searchBar">
+                        </div>
+                        <div class="filterButtons" aria-label="Project filters">
+                            <p>Filter by language</p>
+                            <button type="button" data-filter="all" class="is-active">All</button>
+                            <button type="button" data-filter="javascript">JavaScript</button>
+                            <button type="button" data-filter="html">HTML</button>
+                            <button type="button" data-filter="css">CSS</button>
+                            <button type="button" data-filter="planned">Planned</button>
+                        </div>
+                        <p class="projectsStatus" id="projectsStatus" aria-live="polite">Showing all 15 projects.</p>
+                    </div>
                 </div>
             </div>
             <hr>
             <div class="projectsContainer1">
                 <article class="imageContainer projectCard">
-                    <h3>Calculator Project</h3>
-                    <p class="projectMeta">A small utility build focused on clean input handling and quick interactions.</p>
-                    <a href="https://asalih123-sys.github.io/Calculator-Projects/" target="_blank"><img
-                            src="Images/calc.png" alt="Calculator Project"></a>
-                    <ul class="projectList">
-                        <li>HTML structure</li>
-                        <li>CSS layout and spacing</li>
-                        <li>JavaScript logic</li>
-                    </ul>
-                    <span class="projectTag">HTML / CSS / JavaScript</span>
+                    <div class="projectPreview projectPreviewLive">
+                        <span class="projectPreviewBadge">Live Preview</span>
+                        <iframe src="https://asalih123-sys.github.io/Calculator-Projects/" title="Calculator Project live preview" loading="lazy"></iframe>
+                    </div>
+                    <div class="projectContent">
+                        <span class="projectTag">HTML / CSS / JavaScript</span>
+                        <h3>Calculator Project</h3>
+                        <p class="projectMeta">Live calculator demo with clean input handling, quick interactions, and a simple layout focused on usability.</p>
+                        <ul class="projectList">
+                            <li>Input state handling</li>
+                            <li>Simple layout cleanup</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com/asalih123-sys/Calculator-Projects" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://asalih123-sys.github.io/Calculator-Projects/" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="imageContainer projectCard">
-                    <h3>Number Guess Project</h3>
-                    <p class="projectMeta">A simple game build that helps practice logic, feedback, and state changes.</p>
-                    <a href="https://asalih123-sys.github.io/Guessing-a-Number/" target="_blank"><img
-                            src="Images/numberguess.png" alt="Number Guessing Project"></a>
-                    <ul class="projectList">
-                        <li>Responsive controls</li>
-                        <li>Basic game flow</li>
-                        <li>Reusable button styles</li>
-                    </ul>
-                    <span class="projectTag">HTML / CSS / JavaScript</span>
+                    <div class="projectPreview projectPreviewLive">
+                        <span class="projectPreviewBadge">Live Preview</span>
+                        <iframe src="https://asalih123-sys.github.io/Game-Project/" title="Game Project live preview" loading="lazy"></iframe>
+                    </div>
+                    <div class="projectContent">
+                        <span class="projectTag">HTML / CSS / JavaScript</span>
+                        <h3>Capstone Gaming Project</h3>
+                        <p class="projectMeta">Live capstone game that shows logic flow, feedback, and state changes through simple interactive gameplay.</p>
+                        <ul class="projectList">
+                            <li>Game flow practice</li>
+                            <li>Responsive controls</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com/asalih123-sys/Game-Project" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://asalih123-sys.github.io/Game-Project/" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="imageContainer projectCard">
-                    <h3>Portfolio Website</h3>
-                    <p class="projectMeta">The site you are looking at, built to practice structure, page flow, and presentation.</p>
-                    <ul class="projectList">
-                        <li>Shared navigation and footer</li>
-                        <li>Responsive sections</li>
-                        <li>Simple color system</li>
-                    </ul>
-                    <span class="projectTag">HTML / CSS</span>
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Portfolio Website live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">HTML / CSS</span>
+                        <h3>Portfolio Website</h3>
+                        <p class="projectMeta">Placeholder card for the site itself, built to practice structure, page flow, and presentation.</p>
+                        <ul class="projectList">
+                            <li>Shared navigation</li>
+                            <li>Responsive page sections</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="imageContainer projectCard">
-                    <h3>Contact Page Layout</h3>
-                    <p class="projectMeta">A clean contact page with form fields and contact details laid out clearly.</p>
-                    <ul class="projectList">
-                        <li>Form field styling</li>
-                        <li>Card-based layout</li>
-                        <li>Works on smaller screens</li>
-                    </ul>
-                    <span class="projectTag">HTML / CSS</span>
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Contact Page Layout live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">HTML / CSS</span>
+                        <h3>Contact Page Layout</h3>
+                        <p class="projectMeta">Placeholder card for a clean contact page with form fields and contact details laid out clearly.</p>
+                        <ul class="projectList">
+                            <li>Form field styling</li>
+                            <li>Card-based layout</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="imageContainer projectCard">
-                    <h3>Study Notes Page</h3>
-                    <p class="projectMeta">A future project idea for keeping short notes, links, and practice prompts in one place.</p>
-                    <ul class="projectList">
-                        <li>Planning stage</li>
-                        <li>Will focus on clarity</li>
-                        <li>Good candidate for JavaScript later</li>
-                    </ul>
-                    <span class="projectTag">Planned</span>
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Study Notes Page live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Planned</span>
+                        <h3>Study Notes Page</h3>
+                        <p class="projectMeta">Placeholder card for keeping short notes, links, and practice prompts in one place.</p>
+                        <ul class="projectList">
+                            <li>Planning stage</li>
+                            <li>Clarity-first layout</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="imageContainer projectCard">
-                    <h3>Weather Dashboard Idea</h3>
-                    <p class="projectMeta">A second planned build to practice APIs, conditional states, and simple data display.</p>
-                    <ul class="projectList">
-                        <li>API practice</li>
-                        <li>Reusable cards</li>
-                        <li>Data formatting</li>
-                    </ul>
-                    <span class="projectTag">Planned</span>
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Weather Dashboard Idea live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Planned</span>
+                        <h3>Weather Dashboard Idea</h3>
+                        <p class="projectMeta">Placeholder card for a second planned build to practice APIs, conditional states, and simple data display.</p>
+                        <ul class="projectList">
+                            <li>API practice</li>
+                            <li>Reusable cards</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Task Tracker live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Task Tracker</h3>
+                        <p class="projectMeta">Placeholder card for a task tracker with filtering, saving, and quick status updates.</p>
+                        <ul class="projectList">
+                            <li>Organized task states</li>
+                            <li>Future local storage</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Recipe Finder live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Recipe Finder</h3>
+                        <p class="projectMeta">Placeholder card for searching recipes, filtering results, and showing saved favorites.</p>
+                        <ul class="projectList">
+                            <li>Search interface</li>
+                            <li>Card-based results</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Budget Planner live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Budget Planner</h3>
+                        <p class="projectMeta">Placeholder card for tracking spending categories, totals, and simple monthly planning.</p>
+                        <ul class="projectList">
+                            <li>Totals and summaries</li>
+                            <li>Readable data layout</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Movie Explorer live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Movie Explorer</h3>
+                        <p class="projectMeta">Placeholder card for browsing movies, showing details, and comparing results visually.</p>
+                        <ul class="projectList">
+                            <li>Poster-driven cards</li>
+                            <li>Search and filter flow</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Habit Tracker live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Habit Tracker</h3>
+                        <p class="projectMeta">Placeholder card for tracking repeat habits with simple progress markers and streaks.</p>
+                        <ul class="projectList">
+                            <li>Weekly progress view</li>
+                            <li>Clear habit states</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Quiz App live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Quiz App</h3>
+                        <p class="projectMeta">Placeholder card for a quiz flow with scored answers and simple question navigation.</p>
+                        <ul class="projectList">
+                            <li>Multiple question states</li>
+                            <li>Result summary screen</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Dashboard UI live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Dashboard UI</h3>
+                        <p class="projectMeta">Placeholder card for a dashboard layout with panels, metrics, and summary cards.</p>
+                        <ul class="projectList">
+                            <li>Reusable visual blocks</li>
+                            <li>Balanced spacing</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Markdown Previewer live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Markdown Previewer</h3>
+                        <p class="projectMeta">Placeholder card for editing markdown and previewing formatted output side by side.</p>
+                        <ul class="projectList">
+                            <li>Live preview workflow</li>
+                            <li>Text formatting focus</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="imageContainer projectCard">
+                    <a class="projectPreview" href="https://example.com" target="_blank" rel="noreferrer">
+                        <img src="Images/project-placeholder.svg" alt="Landing Page Study live demo placeholder">
+                    </a>
+                    <div class="projectContent">
+                        <span class="projectTag">Placeholder</span>
+                        <h3>Landing Page Study</h3>
+                        <p class="projectMeta">Placeholder card for a landing page study that focuses on hierarchy, layout, and calls to action.</p>
+                        <ul class="projectList">
+                            <li>Hero section practice</li>
+                            <li>Conversion-focused layout</li>
+                        </ul>
+                        <div class="projectActions">
+                            <a class="projectLink secondary" href="https://github.com" target="_blank" rel="noreferrer">GitHub Repo</a>
+                            <a class="projectLink primary" href="https://example.com" target="_blank" rel="noreferrer">Live Demo</a>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
+
+        <script>
+            (() => {
+                const searchInput = document.getElementById('searchBar');
+                const filterButtons = Array.from(document.querySelectorAll('.filterButtons button[data-filter]'));
+                const cards = Array.from(document.querySelectorAll('.projectCard'));
+                const status = document.getElementById('projectsStatus');
+                const totalCount = cards.length;
+                let activeFilter = 'all';
+
+                const normalize = (value) => value.toLowerCase().trim();
+
+                const updateStatus = (visibleCount) => {
+                    const searchValue = searchInput.value.trim();
+                    if (!searchValue && activeFilter === 'all') {
+                        status.textContent = `Showing all ${totalCount} projects.`;
+                        return;
+                    }
+
+                    const filterLabel = activeFilter === 'all' ? 'all projects' : activeFilter;
+                    const searchPart = searchValue ? ` matching "${searchValue}"` : '';
+                    status.textContent = `Showing ${visibleCount} of ${totalCount} projects${searchPart} in ${filterLabel}.`;
+                };
+
+                const applyFilters = () => {
+                    const searchValue = normalize(searchInput.value);
+                    let visibleCount = 0;
+
+                    cards.forEach((card) => {
+                        const searchableText = normalize(card.textContent);
+                        const matchesSearch = !searchValue || searchableText.includes(searchValue);
+                        const matchesFilter = activeFilter === 'all' || searchableText.includes(activeFilter);
+                        const isVisible = matchesSearch && matchesFilter;
+
+                        card.classList.toggle('is-hidden', !isVisible);
+                        if (isVisible) {
+                            visibleCount += 1;
+                        }
+                    });
+
+                    updateStatus(visibleCount);
+                };
+
+                filterButtons.forEach((button) => {
+                    button.addEventListener('click', () => {
+                        activeFilter = button.dataset.filter;
+                        filterButtons.forEach((otherButton) => otherButton.classList.toggle('is-active', otherButton === button));
+                        applyFilters();
+                    });
+                });
+
+                searchInput.addEventListener('input', applyFilters);
+                applyFilters();
+            })();
+        </script>
     </main>
 
     <footer>
@@ -131,7 +408,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <p>&copy; 2025 Amer Salih. All Rights Reserved.</p>
+        <p>&copy; 2025 Amer Salih, Phoenix, AZ.</p>
     </footer>
 </body>
 
